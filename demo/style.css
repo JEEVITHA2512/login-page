@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #FFDAB9; /* Peach color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure the header appears above other elements */
+}
+
+.logo-left img,
+.logo-right img {
+    max-width: 50px; /* Adjust the size of your logos */
+    margin-right: 10px; /* Add some spacing between logos */
+}
+
+.company-info {
+    text-align: center;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.slogan {
+    font-size: 16px;
+    color: #555;
+}
+
+.wrapper {
+    background: #fff;
+    width: 360px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 80px; /* Add margin to create space between header and login box */
+}
+
+.field {
+    margin-bottom: 20px; /* Add margin to create space between form fields */
+}
+
+.error-txt {
+    text-align: left;
+    color: #ff0000;
+    margin-top: 5px;
+    display: none;
+}
+
+#signupForm {
+    display: none;
+}
+
+#submitBtn {
+    margin-top: 10px; /* Add margin to create space below the submit button */
+}

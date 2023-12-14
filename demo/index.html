@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-left">
+            <img src="home/adminn/Jeevi/login-page/demo/left-logo.jpeg" alt="Left Logo">
+        </div>
+        <div class="company-info">
+            <div class="company-name">MineLegal.AI</div>
+            <div class="slogan">Your Personal Ally in the Coal Frontier</div>
+        </div>
+        <div class="logo-right">
+            <img src="home/adminn/Jeevi/login-page/demo/right-logo.jpeg" alt="Right Logo">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header>Login Form</header>
+        <form id="loginForm" action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Email is required</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password is required</div>
+            </div>
+            <div class="pass-txt"><a href="#" id="signupLink">Not yet a member? Signup now</a></div>
+            <input type="submit" value="Login" id="submitBtn">
+        </form>
+
+        <!-- Signup form initially hidden -->
+        <form id="signupForm" action="#" style="display: none;">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Email is required</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password is required</div>
+            </div>
+            <input type="submit" value="Signup" id="submitBtn">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
